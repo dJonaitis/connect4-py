@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            .title{
+                text-align:center;
+            }
+            table{
+                width:80vw;
+                border:0px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            td{
+                width:40vw;
+                border:1px solid black;
+            }
+            .centerdContainer{
+                margin-left:auto;
+                margin-right:auto;
+            }
+        </style>
+    </head>
+    <body onclick="checkbox">
+        <h1 class="title">Placeholder</h1>
+        <div id="centeredContainer">
+            <table>
+                <tr>
+                    <td>
+                        <h2 class="title">Player 1:</h2>
+                        <input id="p1Name" placeholder="Enter name"></input>
+                        <div></div>
+                        <h3 class="title">Select color:</h3>
+                        <input id="p1Color" type="color"></input>
+                        <div></div>
+                        <input id="p1DefaultColor" type="checkbox" onclick="checkbox(1)">Use default color</input>
+                    </td>
+                    <td>
+                        <h2 class="title">Player 2:</h2>
+                        <input id="p2Name" placeholder="Enter name"></input>
+                        <div></div>
+                        <h3 class="title">Select color:</h3>
+                        <input id="p2Color" type="color"></input>
+                        <div></div>
+                        <input id="p2DefaultColor" type="checkbox" onclick="checkbox(2)">Use default color</input>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
