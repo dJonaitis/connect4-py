@@ -19,9 +19,10 @@
                 margin-right:auto;
             }
         </style>
+        <style src="./style.css"></style>
     </head>
-    <body onclick="checkbox">
-        <h1 class="title">Placeholder</h1>
+    <body>
+        <h1 class="title">Connect 4</h1>
         <div id="centeredContainer">
             <table>
                 <tr>
@@ -32,7 +33,6 @@
                         <h3 class="title">Select color:</h3>
                         <input id="p1Color" type="color"></input>
                         <div></div>
-                        <input id="p1DefaultColor" type="checkbox" onclick="checkbox(1)">Use default color</input>
                     </td>
                     <td>
                         <h2 class="title">Player 2:</h2>
@@ -41,11 +41,13 @@
                         <h3 class="title">Select color:</h3>
                         <input id="p2Color" type="color"></input>
                         <div></div>
-                        <input id="p2DefaultColor" type="checkbox" onclick="checkbox(2)">Use default color</input>
                     </td>
                 </tr>
             </table>
         </div>
-        <script src="script.js"></script>
+        <div class="title">
+            <button onclick="submit()" class="btn">Submit and begin game</button>
+        </div>
+        <script src="./script.js"></script>
     </body>
 </html>

@@ -1,26 +1,31 @@
 let p1Color = document.getElementById("p1Color");
 let p2Color = document.getElementById("p2Color");
 
-let p1ColorCheck = document.getElementById("p1DefaultColor");
-let p2ColorCheck = document.getElementById("p2DefaultColor");
 
+let p1Name = document.getElementById("p1Name");
+let p2Name = document.getElementById("p2Name");
 
-
-
-
-
-
-
-
-function checkbox(){
-    if(p2ColorCheck.value == 1){
-        p2Color.disabled = true;
-    } else {
-        p2Color.disabled = false;
+class player {
+    constructor(name, color, identifier){
+        this.name = name;
+        this.color = color;
+        this.identifier = identifier;
     }
-    if(p1ColorCheck.value == 1){
-        p1Color.disabled = true;
-    } else {
-        p1Color.disabled = false;
-    }
+}
+
+let p1;
+let p2;
+
+function submit(){
+    let p1C;
+    let p2C;
+
+    p1C = p1Color.value;
+    p2C = p2Color.value;
+    
+    p1 = new player(p1Name.value, p1C, '1');
+    p2 = new player(p2Name.value, p2C, '2');
+
+    console.log(p1);
+    console.log(p2);
 }
